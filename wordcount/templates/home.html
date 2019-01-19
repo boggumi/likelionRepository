@@ -1,0 +1,13 @@
+<h1> hello, it is place where you can count!</h1>
+
+<!-- 링크태그 a -->
+<a href="{%url 'about'%}">ABOUT</a>
+
+<!-- 사용자 입력태그 form/ 입력받은걸 어디로 제출할 것인지=action안에 -->
+<form action="{% url 'result' %}">
+    <textarea clos="40" rows="10" name="fulltext"></textarea>
+        <!-- 입력받을 공간에 대한 설정 -->
+    <br>
+    <input type="submit" value="Count">
+    <!-- 제출버튼  -->
+</form>
